@@ -1,138 +1,29 @@
   <!DOCTYPE html>
   <html>
   <head>
-  <style>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  body {
-
-  font-family: Arial, Helvetica, sans-serif;
-
-}
-
-* {
-  box-sizing: border-box;
-
-}
-body {
-  margin: 0;
-  background: url(moonlit.png);
-  background-repeat: repeat;
-  background-position: right;
-  background-attachment: scroll;
-
-}
-.bar {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #203f66;
-
-
-}
-
-.navbar {
-	color: yellow;
-	font-family: ;
-	font-size: 30px;
-  float: left;
-  border-right:1px solid #bbb;
-}
-
-li:last-child {
-  border-right: none;
-}
-
-li a {
-	font-family:;
-	font-size: 30px;
-  display: block;
-  color: #f7dda3;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover:not(.active) {
-  background-color: black;
-
-}
-
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center
-}
-
-img {
-  max-width:100%;
-    height:auto;
-}
-
-.image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70%;
-  flex-basis: 40%
-}
-
-.text {
-  font-size: 20px;
-  padding-left: 20px;
-
-
-}
- box-sizing: border-box;
- }
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
-}
-
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 500px) {
-  .column {
-    width: 100%;
-
-}
-
-
-</style>
+      <link rel="stylesheet" href="style.css">
 </head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <body>
 
 <ul class="bar">
   <li class="navbar"> <a href="home.html">Home</a></li>
+  <li class="navbar"> <a href="videos.html">Videos</a></li>
 </ul>
 
 
   <div class="container">
-  <div class="centered"> <h1 style="font-family: Monaco ; font-size: 200px; color: #f7dda3 ;">aDubu Net</h1>
+  <div class="centered"> <h1 style="font-family: Monaco ; font-size: 200px; color: rgb(240, 71, 4) ;">aDubu Net</h1>
   </div>
   </div>
-  <h1 style="font-family: garamond ; color: #f7dda3"><center>A Personal Website use to post random stuff.</center></h1>
+  <h1 style="font-family: garamond ; color: rgb(240, 71, 4)"><center>A Personal Website use to post random stuff.</center></h1>
 
   <div id='container'>
 
   <div class="image">
   <div class="row">
   <div class="column">
-    <audio>
-    <source src="playlist.ogg" type="audio/ogg">
-    <source src="playlist.mp3" type="audio/mpeg">
-Your browser does not support the audio element.
-</audio>
+   
 
   </div>
   <br>
@@ -140,42 +31,7 @@ Your browser does not support the audio element.
 </div>
 </div>
 
-  <div class="text">
-
-  <center> <h1 style="color: #f7dda3">DubChaeng - Switch to Me</h1>
-   <video controls>
-  <source src="switchtome.mp4" type="video/mp4">
-  <source src="switchtome.ogg" type="video/ogg">
-  Your browser does not support the video tag.
-</video>
-<br>
-<center> <h1 style="color: #f7dda3"> Golyos - Hugot sa Comlab</h1>
-   <video controls>
-  <source src="golyoshugot.mp4" type="video/mp4">
-  <source src="golyoshugot.ogg" type="video/ogg">
-  Your browser does not support the video tag.
-</video>
-<br>
-  <center> <h1 style="color: #f7dda3">Pakyaw ft. Golyos - Shinomay na ni Rice pa</h1>
-   <video controls>
-  <source src="pakyaw.mp4" type="video/mp4">
-  <source src="pakyaw.ogg" type="video/ogg">
-  Your browser does not support the video tag.
-</video>
-
-<br>
-<br>
-<br>
-    <center> <h1 style="color: #f7dda3">Dahyuniee</h1>
-   <video controls>
-  <source src="dahyuniee.mp4" type="video/mp4">
-  <source src="dahyuniee.ogg" type="video/ogg">
-  Your browser does not support the video tag.
-</video>
-
-</div>
-</div>
-
+ 
 
 
 
