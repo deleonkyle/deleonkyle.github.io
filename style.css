@@ -1,0 +1,79 @@
+h1 {
+  color: rgb(255, 255, 204);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 130%;
+  
+}
+p {
+  color: rgb(255, 255, 204);
+  font-family: courier;
+  font-size: 95%; 
+}
+
+h3 {
+  color: rgb(255, 255, 204);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 130%;
+}
+
+h2 {
+  color: rgb(255, 255, 204);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 130%;
+}
+
+li {
+  color: rgb(255, 255, 204);
+  font-family: courier;
+  font-size: 95%;
+}
+
+.header {
+  margin: auto;
+  color: rgb(255, 255, 204);
+  font-family: Georgia;
+  font-size: 100%;
+  border: 3px solid #066e8a;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+
+  width: 80%;
+}
+.Personal {
+    font-family: Georgia;
+    font-size: 100%;
+    margin-left: 140px;
+    margin-right: 30px;
+    display: inline-block;
+    width: 20%;
+    border: 3px solid #066e8a;
+    padding: 10px;
+}
+.Educ {
+
+    font-family: Georgia;
+    font-size: 100%;
+    display: inline-block;
+    width: 50%;
+    border: 3px solid #066e8a;
+    padding: 10px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    margin: 10px;
+  }
+body {
+  background-image: url("bg.png");
+  background-position: right top;
+  background-attachment: scroll;
+}
+img {
+  border-radius: 70%;
+  
+
+}
