@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>kdeleon CV</title>
+  <link rel="icon" type="image/x-icon" href="aot.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  #mySidenav a {
+  position: absolute;
+  left: -80px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+#about {
+  top: 20px;
+  background-color: #cc9900;
+}
+
+#projects {
+  top: 80px;
+  background-color: #ff0066;
+}
+
+#contact {
+  top: 140px;
+  background-color: #4775d1
+}
+img {
+  border-radius: 50%;
+}
+body{
+  background-image: url("bg.png");
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  align-content: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.header {
+  margin: auto;
+  color: rgb(255, 255, 204);
+  font-family: Georgia;
+  font-size: 100%;
+  text-align: center;
+  width: 80%;
+}
+h2 {
+  color: rgb(255, 255, 204);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 130%;
+}
+p {
+  color: rgb(255, 255, 204);
+  font-family: courier;
+  font-size: 30px; 
+}
+li {
+  text-align: justify;
+  color: rgb(255, 255, 204);
+  font-family: courier;
+  font-size: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0 !important;
+}
+
+a {
+  text-decoration: none !important;
+  display: inline-block;
+}
+
+img {
+  max-width: 100%;
+}
+
+button:focus {
+  outline: none;
+}
+h3,
+h4,
+h5,
+h6 {
+  color: rgb(255, 255, 204);
+  margin: 0;
+}
+.container {
+  width: 100%;
+  max-width: 1140px;
+  padding: 0 15px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+.timelines h2 {
+  text-align: center;
+  color: rgb(255, 255, 204);
+  font-weight: 600;
+  margin-bottom: 40px;
+  font-size: 32px;
+}
+.d-flex-2 {
+  display: flex;
+  align-items: center;
+}
+.timeline-area {
+  padding: 80px 0;
+}
+.all-timelines {
+  position: relative;
+}
+.timelines h2 {
+  text-align: center;
+  color: rgb(255, 255, 204);
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+.all-timelines::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 100%;
+  width: 2px;
+  background: #efa22f;
+  top: 20px;
+}
+.single-timeline {
+  margin-bottom: 22px;
+}
+.timeline-blank {
+  width: 50%;
+}
+.timeline-text {
+  width: 50%;
+  padding-left: 30px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+}
+.timeline-text h6 {
+  color: rgb(255, 255, 204);
+  font-weight: 900;
+  display: inline-block;
+  font-size: 26px;
+}
+.timeline-text span {
+  color: yellow;
+  display: block;
+  width: 100%;
+  font-size: 25px;
+}
+.single-timeline:nth-child(even) .timeline-text span {
+  text-align: right;
+}
+.t-square {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  left: -6px;
+  background: #efa22f;
+}
+.single-timeline:nth-child(even) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+.single-timeline:nth-child(even) .t-square {
+  right: -6px;
+  left: unset;
+}
+.single-timeline:nth-child(even) .timeline-text {
+  padding-left: 0;
+  padding-right: 30px;
+  text-align: right;
+}
+
+@media all and (max-width: 991px) {
+}
+@media all and (max-width: 768px) {
+  .all-timelines::before {
+    right: unset;
+    top: 0;
+  }
+  .single-timeline:nth-child(2n) .timeline-text {
+    padding-left: 30px;
+    padding-right: 0;
+    text-align: left;
+  }
+  .single-timeline:nth-child(2n) .t-square {
+    left: -6px;
+    right: unset;
+  }
+  .timeline-blank {
+    display: none;
+  }
+  .timeline-text {
+    width: 100%;
+  }
+  .single-timeline:nth-child(even) .timeline-text span {
+    text-align: left !important;
+  }
+}
+
+.flex-container {
+  display: inline-block;
+}
+
+.flex-container > div {
+  margin: 5px;
+  padding: 10px;
+  font-size: 30px;
+}
+.aboutme{
+  text-align: center;
+  font-size: 40px;
+}
+.info {
+  box-sizing: border-box;
+  position: relative;
+}
+
+.row1{
+  display: flex;
+  text-align: justify;
+}
+
+.column1{
+  flex: 50%;
+  padding: 10px;
+  height: 20px;
+  position: relative;
+}
+
+.column2{
+  flex: 50%;
+  padding: 10px;
+  height: 150px;
+  position: relative;
+
+}
+.column3{
+  flex: 50%;
+  padding: 10px;
+  height: 150px;
+  position: relative;
+}
+.headerbg {
+  padding: 60px;
+  text-align: center;
+  background-image: url("bg.png");
+  color: white;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+<div id="mySidenav" class="sidenav">
+  <a href="about.html" id="about">About</a>
+  <a href="projects.html" id="projects" target="_blank">Projects</a>
+  <a href="contact.html" target="_blank" rel="noopener noreferrer" id="contact">Contact</a>
+</div>
+
+<div class="headerbg">
+  <h1>DE LEON, KYLE KRISTOPOHER L.</h1>
+  <p>IT Student  |  kdeleon2001@gmail.com  |  Batangas State University </p>
+</div>  
+
+<div class="header" >
+    <img src="icon.jpg" alt="Avatar" style="width:200px">
+    <p>I am a 3rd Year IT Student at Batangas State University. My skills proficiency are at Database Management, while I'm learning Web Development this time.</p>
+    <div class="buttons">
+<a href="https://web.facebook.com/kyle.deleon03/" target="_blank" rel="noopener noreferrer" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-instagram"></a>
+</div>
+</div>
+
+<div class="aboutme"><h2>About Me</h2></div>
+<div class="info">
+  <div class="row1">
+    <ul class="info">
+      <div class="column1">
+        <li>Majoring in Information Technlogy (Bachelor of Science)</li>
+      </div>
+      <div class="column1">
+      <li>Batangas State University at Alangilan, Batangas City, Philippines</li>
+      </div>
+      <div class="column1">
+      <li>Expected Graduation: 2024</li>
+      </div>
+      <div class="column1">
+      <li>Relevant Coursework: Computer Technical Support, Hardware and Software, Operating Systems,Introduction to Networking, Networking Security, Database design and development, and Fundamentals of information systems</li>
+      </div>
+    </ul>
+
+  <div class="column2">
+      <h2>Personal Info</h2>
+      <li>Zone 14, Taal Batangas</li>
+      <li>+63995-234-6723</li>
+      <li>Age: 21</li>
+      <li>September 03, 2001</li>
+      <li>Tagalog & English</li>
+    </div>
+
+  <div class="column3">
+      <h2>Programming Languages</h2>
+      <li>C++</li>
+      <li>Java</li>
+      <li>Python</li>
+      <li>Mysql</li>
+      <li>PHP</li>
+    </div>
+  </ul>
+
+</div>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="timeline-area">
+  <div class="container">
+    <div class="timelines">
+      <h2>Educational Background</h2>
+    </div>
+    <div class="all-timelines">
+      <!--SINGLE TIMELINE-->
+      <div class="single-timeline d-flex-2">
+        <div class="timeline-blank"></div>
+        <div class="timeline-text d-flex-2">
+          <span>
+            <h6>August 2020</h6> — I started my first year in College at Batangas State University taking the course BS Information Technology
+          </span>
+          <div class="t-square"></div>
+        </div>
+      </div>
+      <!--SINGLE TIMELINE-->
+      <div class="single-timeline d-flex-2">
+        <div class="timeline-blank"></div>
+        <div class="timeline-text d-flex-2">
+          <span>
+            <h6>March 2018-2019 </h6> — I graduated at Lemery Colleges as an Information and Communication Technology Student
+          </span>
+          <div class="t-square"></div>
+        </div>
+      </div>
+      <!--SINGLE TIMELINE-->
+      <div class="single-timeline d-flex-2">
+        <div class="timeline-blank"></div>
+        <div class="timeline-text d-flex-2">
+          <span>
+            <h6>March 2017-2018</h6> — In Junior High School I graduated at Taal National High School
+          </span>
+          <div class="t-square"></div>
+        </div>
+      </div>
+      <!--SINGLE TIMELINE-->
+      <div class="single-timeline d-flex-2">
+        <div class="timeline-blank"></div>
+        <div class="timeline-text d-flex-2">
+          <span>
+            <h6>June 2016-2017</h6> — Elementary School, I graduated at Sta Rita Elementary School
+          </span>
+          <div class="t-square"></div>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+</body>
+</html> 
